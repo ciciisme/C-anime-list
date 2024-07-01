@@ -40,13 +40,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height:100vh;
-    justify-content: center;
     margin: 0;
-    margin-top: 2rem;
-    max-width: 100%;
-    overflow-x: hidden;
     gap: 3rem;
+    position: relative;
+    overflow-x: hidden;
 }
 
 
@@ -63,12 +60,12 @@ body{
 section{
     padding-block: 3rem;
     padding-bottom: 7rem;
-    margin-top: 2rem;
 }
 
 .hero{
-     top: 3rem;
     position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .hero::after{
@@ -100,9 +97,7 @@ section{
         display: flex;
         flex-direction: row;
         max-width: 100%;
-        max-height: auto;
-        align-items: flex-start;
-        place-self:center;
+        max-height: 150vh;
         gap: 0;
         position: relative;
         
@@ -137,10 +132,9 @@ section{
                   margin-right: 0;
                   padding: 0;
                   position: relative;
-                  top: 19vh;
-                  left:5vh ;
+                  margin-top: 12vh;
                   align-self: flex-start;
-                  
+                  vertical-align:middle;
                   flex:2 ;
             }
 
@@ -157,7 +151,7 @@ section{
             margin-left: 10px;
         }
         
-        a {
+        #redrum {
             background-color: var(--black);
             color: var(--primary_color);
             font-family:Pontiac;
@@ -181,7 +175,7 @@ section{
             height: auto;
             align-self:flex-end;
             position: relative;
-            top: 7rem
+            vertical-align: bottom;
         }
 
 .animelist_title{
@@ -196,7 +190,7 @@ section{
     flex-direction:row;   
     gap: 1rem;
     margin-inline: auto;
-    height:20vh;
+    height:30vh;
     position: relative;
     left:2rem
 }
@@ -219,7 +213,7 @@ section{
 
 .line{
     background-color: var(--white);
-    height: 20px ;
+    height: 10px ;
     width: 20rem;
     border: 1px red;
     margin:auto;
@@ -232,13 +226,15 @@ section{
 .animelist{
     padding-top: 0;
     margin-top: 0;
+    position: relative;
+    left: 3vh
 }
 
 
 .lower_tier{
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 10vh;
 }
 
 .lowest_tier{
@@ -248,47 +244,189 @@ section{
     gap: 8rem;
     margin-inline: auto;
     position: relative;
-    left: 8rem;
+    left: 9rem;
 }
 
 .low_anime{
     max-width:12rem;
-    max-height: auto;
+    max-height: 20rem;
     position: relative;
 }
 
 
-
-.low_anime::before{
-     position: absolute;
-     color: black;
-     font-family: Pontiac;
-     font-size: 128px;
-     font-weight: normal;
-     -webkit-text-stroke: var(--white) 5px;
-     inset: 0;
-     z-index:-1 ;
-     text-align: left;
-     top:14rem;
-     right: 30rem;
+.low_number{
+    font-family: Pontiac;
+    font-size: 200px;
+    font-weight: normal;
+    margin:0;
+    color: black;
+    -webkit-text-stroke: WHITE 5px;
+    position: relative;
+    left:-5rem;
+    top:-14rem;
+    z-index: -1;
 }
 
-                          #a10::before{
-                              content: "10";
-                          }
-                          
-                          #a9::before{
-                              content: "9";
-                          }
-                          
-                          #a8::before{
-                              content: "8";
-                          }
-                          
-                          #a7::before{
-                              content: "7";
-                          }
-                          
-                          #a6::before{
-                              content: "6";
-                          }
+#aa10{
+    left:-10rem;
+    top:-15.5rem;
+}
+
+.lowest_poster{
+    max-height:288px;
+    border-radius: 5%;
+}
+
+.mid_anime{
+    max-width:19.5rem;
+    max-height: auto;
+    position: relative;
+    left: 4rem;
+    gap: 10rem;
+    border-radius: 20%;
+}
+
+.mid_num{
+    font-family: Pontiac;
+    font-size: 250px;
+    font-weight: normal;
+    margin:0;
+    color: black;
+    -webkit-text-stroke: WHITE 5px;
+    position: relative;
+    left:-7rem;
+    top:-30rem;
+    z-index: -1;
+}
+
+.animeimg{
+    border-radius: 5%;
+}
+
+#numba1 {
+    display: inline-flex;
+    flex-direction:row;
+    max-height: 80vh;
+    max-width: 100vw;
+    background-color: #DDDDDD;
+    color: black;
+    align-items: center;
+    gap: 10vh;
+}
+
+#b1{
+    font-family: Pontiac;
+    font-size: 550px;
+    font-weight: normal;
+    color: black;
+    margin: 3vh;
+    padding: 0;
+}
+
+#Yourname {
+    display:flex;
+    flex-direction: column;
+    max-width: 400vh;
+}
+
+#Yournameimg {
+    max-height: 70vh;
+    border-radius: 5%;
+    position: relative;
+    left: -2vh
+}
+
+#Your_title{
+    font-family: Pontiac;
+    font-size: 150px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#Your_description{
+    font-family: Pontiac;
+    font-size: 45px;
+    font-weight: normal;
+    color: var(--gray_font);
+    margin: 0;
+    padding: 0;
+    margin-left: 10vh;
+    line-height: 7vh;
+    letter-spacing: 1.5px;
+}
+
+footer{
+    background-color: #2B2B2B;
+    width: 100vw;
+    max-height: 50000vh;
+    color: white;
+    margin-inline: auto;
+    justify-items: center;
+    padding-top: 5vh;
+}
+
+.hypertext{
+    display: flex;
+    direction: row;
+}
+
+.clickicon{
+    max-width: 6vh
+}
+
+.ctme {
+    font-family: Pontiac;
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.hcreds{
+    font-family: Pontiac;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bcreds{
+    font-family: Pontiac;
+    font-size: 23px;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+    padding: 0; 
+    align-self: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: lightskyblue;
+    max-height: 12vh;
+    position:sticky;
+    z-index: 3;
+    width: 100vw;
+    top: 0;
+}
+
+#boy{
+    position: relative;
+    bottom: 5vh;
+    margin-left: 5vh;
+}
+
+.tableofcontents{
+    font-family: Pontiac;
+    font-size: 32px;
+    font-weight: normal;
+    color: var(--gray_font);
+    margin: 0;
+    padding: 0;  
+    align-content: flex-end;
+}
