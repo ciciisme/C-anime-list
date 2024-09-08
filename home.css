@@ -255,8 +255,8 @@ section{
 
 .low_number{
     font-family: Pontiac;
-    font-size: 900px;
-    font-weight: normal;
+    font-size: 100px;
+    font-weight: 900;
     margin:0;
     color: black;
     -webkit-text-stroke: WHITE 5px;
@@ -287,8 +287,8 @@ section{
 
 .mid_num{
     font-family: Pontiac;
-    font-size: 900px;
-    font-weight: normal;
+    font-size: 250px;
+    font-weight: 900;
     margin:0;
     color: black;
     -webkit-text-stroke: WHITE 5px;
